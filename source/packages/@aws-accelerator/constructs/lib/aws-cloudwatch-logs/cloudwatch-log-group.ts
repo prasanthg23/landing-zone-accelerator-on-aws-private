@@ -133,7 +133,7 @@ export class CloudWatchLogGroups extends cdk.Resource implements ILogGroup {
           },
           {
             Effect: 'Allow',
-            Action: ['kms:DescribeKey', 'kms:ListKeys', 'kms:Encrypt', 'logs:AssociateKmsKey', 'logs:DescribeLogGroups'],
+            Action: ['kms:DescribeKey', 'kms:ListKeys', 'kms:Decrypt' 'kms:Encrypt', 'logs:AssociateKmsKey', 'logs:DescribeLogGroups'],
             Resource: '*',
           },
         ];
